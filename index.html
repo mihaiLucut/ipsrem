@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ideal Property Solutions Remodeling</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/favicon/ipsremodeling-favicon.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="bg-image">
+      <section class="dark-filter"></section>
+    </section>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <span onclick="scrollToContact('#home')">Home</span>
+            </li>
+            <li>
+              <span onclick="scrollToContact('#services')">Services</span>
+            </li>
+            <li>
+              <span onclick="scrollToContact('#contact')">Contact or Call Now: (708)417-1954</span>
+            </li>
+          </ul>
+        </nav>
+        <div id="home" class="logo">
+          <img
+            src="assets/logo/ipsremodeling-logo-sq-230.png"
+            alt="ipsremodeling-logo"
+          />
+          <h1>We install new floors</h1>
+        </div>
+      </header>
+
+      <main>
+        <section id="services">
+          <div>
+            <h2>Services</h2>
+            <h1>We offer installation for a variety of types of vynil </h1>
+            <ul>
+                <li><a href="https://www.homedepot.com/b/Flooring-Laminate-Flooring/N-5yc1vZare1" target="_blank">Laminated</a></li>
+                <li><a href="https://www.homedepot.com/b/Flooring-Vinyl-Flooring-Vinyl-Plank-Flooring/N-5yc1vZbzjz" target="_blank">Vynil</a></li>
+                <li><a href="https://www.homedepot.com/b/Flooring-Hybrid-Resilient-Flooring/N-5yc1vZ2fkpdm6" target="_blank">Hybrid </a></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <section id="contact">
+          <div class="contact-form">
+            <div>
+              <h2>Schedule an Appointment</h2>
+              <div class="contact-message">
+                <p>
+                  Contact us today and we will schedule an appointment for a free estimate!
+                </p>
+              </div>
+            </div>
+            <div class="form-container">
+              <input
+                id="fullName"
+                type="text"
+                placeholder="Full Name"
+                required
+              />
+              <div>
+                <input id="email" type="email" placeholder="e-mail" required />
+                <input
+                  id="phone"
+                  type="phone"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+              <textarea
+                id="message"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your message for us"
+                required
+              ></textarea>
+              <button onclick="sendMail()">Send</button>
+            </div>
+          </div>
+        </section>
+        <div class="b-footer">
+          <section class="some">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+            </ul>
+          </section>
+          <section class="copyright">
+            <p><span id="copyright-year"></span> © IPS Remodeling </p>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b8183a7748.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("ZxVUPtEgND9eLZFei");
+      })();
+    </script>
+  </body>
+</html>
