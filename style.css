@@ -26,7 +26,7 @@ p {
 }
 
 .bg-image {
-  background-image: url("assets/images/apt-room-cp.png");
+  background-image: url("assets/images/room-high-cp.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 75%;
@@ -112,7 +112,7 @@ ul li span:hover {
   height: 480px;
   left: 0;
   right: 0;
-  background-color: rgba(24, 34, 68, 0.65);
+  background-color: rgba(24, 34, 68, 0.35);
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
