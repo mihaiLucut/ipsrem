@@ -80,6 +80,8 @@ nav ul li:hover{
 ul li {
   position: relative;
   padding: 10px 0px;
+  flex: 1;
+  text-align: center
 }
 
 ul li a {
